@@ -1,0 +1,6 @@
+node_modules
+e2e/__screenshots__
+e2e/__videos__
+.DS_Store
+dist
+coverage

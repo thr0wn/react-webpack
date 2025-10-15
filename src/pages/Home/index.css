@@ -1,0 +1,12 @@
+.home-page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.home-content {
+  background: white;
+
+  @media (max-width: 768px) {
+    padding: 0 8px;
+  }
+}

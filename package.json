@@ -1,0 +1,33 @@
+{
+  "name": "@thr0wn/react-webpack",
+  "version": "0.0.1",
+  "description": "react+webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx cross-env NODE_ENV=production webpack --mode=production",
+    "start": "npx webpack-dev-server --open"
+  },
+  "author": "natanscamargos@gmail.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.2.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^5.38.1",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^5.5.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  }
+}
