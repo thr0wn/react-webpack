@@ -6,7 +6,7 @@ import "./index.css";
 export const Menu = () => {
   const history = useHistory();
   const [open, setOpen] = useState(false);
-  const Links = useState(() => (
+  const Links = (
     <>
       <a className="link">
 	<p className="text">
@@ -20,14 +20,12 @@ export const Menu = () => {
 	</p>
       </a>
     </>
-  ), []);
+  );
 
-  const MenuMobile = useMemo(() =>
-    open ?
+  const MenuMobile =  open && (
       <nav className="menu-mobile">
 	 {Links}
-      </nav> : null,
-    [open]
+      </nav>
   );
   
   return (
