@@ -38,7 +38,7 @@ module.exports = (env, argv) => ({
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: path.resolve(__dirname, "public/index.html"),
-      favicon: path.resolve(__dirname, "public/images/favicon.png"),
+      favicon: path.resolve(__dirname, "public/images/logo.svg"),
       chunks: ["app"],
     }),
     argv.mode === "production"
