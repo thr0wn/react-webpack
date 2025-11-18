@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import Title from "@/src/components/Title";
 import Link from "@/src/components/Link";
 import { useHistory } from "react-router";
 import { FaBars } from 'react-icons/fa';
@@ -20,6 +21,7 @@ export const Menu = () => {
 
   const MenuMobile = open && (
     <nav className="menu-mobile">
+      <Title>Menu</Title>
       {Links}
     </nav>
   );
