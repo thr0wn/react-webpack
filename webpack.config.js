@@ -16,7 +16,7 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       {
-        test: /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|cur|ani|pdf)(\?.*)?$/,
+        test: /\.(svg|ico|jpg|jpeg|png|gif|eot|otf|webp|cur|ani|pdf|ttf|woff|woff2)(\?.*)?$/,
         use: {
           loader: "file-loader",
         },

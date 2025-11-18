@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Menu from "@/src/components/Menu";
-import logo from "@/public/images/logo.svg";
+import Logo from "@/src/components/Logo";
 import "./index.css";
 
 const Header = () => (
   <div className="header">
-    <img src={logo} alt="" />
+    <Logo />
     <Menu />
   </div>
 );

@@ -4,8 +4,8 @@
 }
 
 .home-content {
-  background: white;
-
+  padding: 8px 32px;
+  
   @media (max-width: 768px) {
     padding: 0 8px;
   }

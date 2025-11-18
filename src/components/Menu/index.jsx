@@ -9,34 +9,32 @@ export const Menu = () => {
   const Links = (
     <>
       <a className="link">
-	<p className="text">
-	  Home
-	</p>
+        <p className="text">
+          Home
+        </p>
       </a>
       <a className="link">
-	<p className="text">
+        <p className="text">
 
-	  About
-	</p>
+          About
+        </p>
       </a>
     </>
   );
 
-  const MenuMobile =  open && (
-      <nav className="menu-mobile">
-	 {Links}
-      </nav>
+  const MenuMobile = open && (
+    <nav className="menu-mobile">
+      {Links}
+    </nav>
   );
-  
+
   return (
     <>
       <div className="menu">
-	{Links}
-	<i onClick={() => setOpen(!open)}
-	   className="menu-icon"
-	>
+        {Links}
+        <i onClick={() => setOpen(!open)} className="menu-icon">
           <FaBars />
-	</i>
+        </i>
       </div>
       {MenuMobile}
     </>

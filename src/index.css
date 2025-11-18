@@ -1,16 +1,32 @@
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --bg-color-primary: #020020;
+  --bg-color-secondary: #010010;
+  --bg-color-tertiary: #101010;
+  --text-color-primary: #FFFFFF;
 }
 
-.text {
-  font-size: 16px;
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-VariableFont_wdth,wght.ttf") format("ttf");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: right;
-  color: black;
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Italic-VariableFont_wdth,wght.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: var(--bg-color-primary);
+  background: linear-gradient(120deg, var(--bg-color-primary) 0%, var(--bg-color-secondary) 50%, var(--bg-color-tertiary) 100%);
 }
 
 .link {}
