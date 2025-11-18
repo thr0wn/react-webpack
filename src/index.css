@@ -1,8 +1,9 @@
 :root {
+  --color-white: #FFFFFF;
   --bg-color-primary: #020020;
   --bg-color-secondary: #010010;
   --bg-color-tertiary: #101010;
-  --text-color-primary: #FFFFFF;
+  --text-color-primary: var(--color-white);
 }
 
 @font-face {
@@ -27,6 +28,9 @@ body {
   min-height: 100vh;
   background: var(--bg-color-primary);
   background: linear-gradient(120deg, var(--bg-color-primary) 0%, var(--bg-color-secondary) 50%, var(--bg-color-tertiary) 100%);
+  color: var(--text-color-primary)
 }
 
-.link {}
+p {
+  margin: 0;
+}

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from "react";
+import Link from "@/src/components/Link";
 import { useHistory } from "react-router";
 import { FaBars } from 'react-icons/fa';
 import "./index.css";
@@ -8,17 +9,12 @@ export const Menu = () => {
   const [open, setOpen] = useState(false);
   const Links = (
     <>
-      <a className="link">
-        <p className="text">
-          Home
-        </p>
-      </a>
-      <a className="link">
-        <p className="text">
-
-          About
-        </p>
-      </a>
+      <Link>
+        Home
+      </Link>
+      <Link>
+        About
+      </Link>
     </>
   );
 
