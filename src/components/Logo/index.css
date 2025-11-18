@@ -1,0 +1,6 @@
+.logo {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  color: var(--icon-color);
+}

@@ -1,0 +1,13 @@
+.link {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 2px;
+  display: inline-block;
+  color: var(--text-color-primary);
+  cursor: pointer;
+  width: max-content;
+}
