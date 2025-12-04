@@ -1,14 +1,19 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "@/src/components/Header";
 import Title from "@/src/components/Title";
 import Text from "@/src/components/Text";
 import Tag from "@/src/components/Tag";
 import Button from "@/src/components/Button";
+import Logo from "@/src/components/Logo";
+import Menu from "@/src/components/Menu";
 import "./index.css";
 
 const Home = () => (
   <main className="home-page">
-    <Header />
+    <Header>
+      <Logo />
+      <Menu />
+    </Header>
     <article className="home-content">
       <section>
         <Title>Title 1</Title>

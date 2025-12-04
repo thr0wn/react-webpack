@@ -8,7 +8,7 @@ const Button = ({ className, children, ...otherProps }) => (
 );
 
 Button.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 Button.defaultProps = {

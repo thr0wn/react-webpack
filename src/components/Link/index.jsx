@@ -8,7 +8,7 @@ const Link = ({ className, children, ...otherProps }) => (
 );
 
 Link.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 Link.defaultProps = {

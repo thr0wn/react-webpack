@@ -8,7 +8,7 @@ const Text = ({ className, children, ...otherProps }) => (
 );
 
 Text.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 Text.defaultProps = {

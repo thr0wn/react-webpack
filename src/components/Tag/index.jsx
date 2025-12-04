@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./index.css";
@@ -8,7 +8,7 @@ const Tag = ({ className, children, ...otherProps }) => (
 );
 
 Tag.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 Tag.defaultProps = {

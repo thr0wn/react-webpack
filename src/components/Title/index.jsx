@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./index.css";
@@ -8,7 +8,7 @@ const Title = ({ className, children, ...otherProps }) => (
 );
 
 Title.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 };
 
 Title.defaultProps = {

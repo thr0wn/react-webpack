@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import Title from "@/src/components/Title";
 import Link from "@/src/components/Link";
 import { useHistory } from "react-router";
