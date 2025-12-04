@@ -8,10 +8,12 @@ const Title = ({ className, children, ...otherProps }) => (
 );
 
 Title.propTypes = {
-  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired
 };
 
 Title.defaultProps = {
+  className: "",
   children: null
 };
 

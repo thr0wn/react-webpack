@@ -1,35 +1,26 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
 import Title from "@/src/components/Title";
-import Link from "@/src/components/Link";
-import { useHistory } from "react-router";
 import { FaBars } from 'react-icons/fa';
 import "./index.css";
 
-export const Menu = () => {
-  const history = useHistory();
+export const Menu = ({ className, children, ...otherProps }) => {
   const [open, setOpen] = useState(false);
-  const Links = (
-    <>
-      <Link>
-        Home
-      </Link>
-      <Link>
-        About
-      </Link>
-    </>
-  );
 
   const MenuMobile = open && (
     <nav className="menu-mobile">
       <Title>Menu</Title>
-      {Links}
+      {children}
     </nav>
   );
 
   return (
     <>
-      <div className="menu">
-        {Links}
+      <div className={classNames("menu", className)} {...otherProps}>
+        <div className="menu-content">
+          {children}
+        </div>
         <i onClick={() => setOpen(!open)} className="menu-icon">
           <FaBars />
         </i>
@@ -37,6 +28,16 @@ export const Menu = () => {
       {MenuMobile}
     </>
   )
+};
+
+Menu.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired
+};
+
+Menu.defaultProps = {
+  className: "",
+  children: null,
 };
 
 export default Menu;

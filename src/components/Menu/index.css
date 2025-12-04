@@ -1,10 +1,12 @@
 .menu {
+  display: block;
+}
+
+.menu .menu-content {
   display: flex;
   align-items: center;
   gap: 16px;
-}
 
-.menu .link {
   @media (max-width: 768px) {
     display: none;
   }

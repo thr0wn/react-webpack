@@ -4,14 +4,16 @@ import classNames from "classnames";
 import "./index.css";
 
 const Link = ({ className, children, ...otherProps }) => (
-  <a className={classNames("link", className)} {...otherProps}>{children}</a>
+  <p className={classNames("link", className)} {...otherProps}>{children}</p>
 );
 
 Link.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 Link.defaultProps = {
+  className: "",
   children: null
 };
 

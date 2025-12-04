@@ -8,10 +8,12 @@ const Tag = ({ className, children, ...otherProps }) => (
 );
 
 Tag.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 Tag.defaultProps = {
+  className: "",
   children: null
 };
 
