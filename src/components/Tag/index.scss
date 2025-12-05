@@ -1,0 +1,15 @@
+@use "@/src/variables";
+
+.tag {
+  font-size: variables.$text-size-sm;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0px;
+  border-left: variables.$border-primary;
+  display: inline-block;
+  padding: 0 4px;
+  margin: 4px 0;
+  color: variables.$text-color-primary;
+  cursor: pointer;
+}

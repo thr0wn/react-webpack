@@ -1,0 +1,49 @@
+@use "@/src/variables";
+
+.menu {
+  .menu-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .menu-icon {
+    color: variables.$icon-color;
+    user-select: none;
+  }
+
+  @media (min-width: variables.$breakpoint-md) {
+    .menu-icon {
+      display: none;
+    }
+  }
+
+  @media (max-width: variables.$breakpoint-md) {
+    .menu-content {
+      display: none;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+
+}
+
+.menu-mobile {
+  color: variables.$text-color-primary;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  padding: 8px;
+  height: calc(100vh - 16px);
+  border-right: variables.$border-primary;
+  background: variables.$bg-color-secondary;
+  background: variables.$bg-gradient;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}

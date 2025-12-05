@@ -1,0 +1,20 @@
+@use "@/src/variables";
+
+.button {
+  font-size: variables.$text-size-md;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  border: variables.$border-primary;
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 4px 0;
+  color: variables.$text-color-primary;
+  cursor: pointer;
+  background: transparent;
+
+  &:hover {
+    background: variables.$button-bg;
+  }
+}

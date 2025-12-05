@@ -1,0 +1,29 @@
+@use "variables";
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/Roboto-Italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: variables.$bg-color-primary;
+  background: variables.$bg-gradient;
+  color: variables.$text-color-primary
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+/* colors */
+$color-white: #FFFFFF;
+$color-blue: #0000FF;
+
+/* text */
+$text-color-primary: $color-white;
+$text-size-sm: 12px;
+$text-size-md: 16px;
+$text-size-lg: 24px;
+
+/* background */
+$bg-color-primary: #020020;
+$bg-color-secondary: #010010;
+$bg-color-tertiary: #101010;
+$bg-gradient: linear-gradient(120deg, $bg-color-primary 0%, $bg-color-secondary 50%, $bg-color-tertiary 100%);
+
+/* border */  
+$border-color: $color-white;
+$border-primary: 1px solid $border-color;
+
+/* button */  
+$button-bg: $color-blue;
+
+/* icon */  
+$icon-color: $color-white;
+
+/* break points (not working with media queries!) */
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+/* z-index */
+$header-z-index: 100;
+$modal-z-index: 101;
+

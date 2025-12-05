@@ -1,0 +1,13 @@
+@use "@/src/variables";
+
+.title {
+  font-size: variables.$text-size-lg;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: variables.$text-color-primary;
+  border-bottom: variables.$border-primary;
+  padding: 4px 0;
+  margin: 4px 0;
+}
