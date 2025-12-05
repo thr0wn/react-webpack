@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./index.css";
+import "./index.scss";
 
 const Page = ({ children, header, className, ...otherProps }) => (
-  <main className={classNames("page", className)} {...otherProps}>
+  <article className={classNames("page", className)} {...otherProps}>
     {header}
     <article className="page-content">
       {children}
     </article>
-  </main>
+  </article>
 );
 
 Page.propTypes = {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import Title from "@/src/components/Title";
 import { FaBars } from 'react-icons/fa';
-import "./index.css";
+import "./index.scss";
 
 export const Menu = ({ className, children, ...otherProps }) => {
   const [open, setOpen] = useState(false);

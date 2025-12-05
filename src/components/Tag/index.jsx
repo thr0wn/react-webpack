@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./index.css";
+import "./index.scss";
 
 const Tag = ({ className, children, ...otherProps }) => (
   <p className={classNames("tag", className)} {...otherProps}>{children}</p>

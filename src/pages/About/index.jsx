@@ -2,7 +2,7 @@ import React from "react";
 import Title from "@/src/components/Title";
 import Text from "@/src/components/Text";
 import PageWithHeader from "@/src/pages/PageWithHeader";
-import "./index.css";
+import "./index.scss";
 
 const About = () => (
   <PageWithHeader>

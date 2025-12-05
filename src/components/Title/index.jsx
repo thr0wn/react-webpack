@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./index.css";
+import "./index.scss";
 
 const Title = ({ className, children, ...otherProps }) => (
   <h1 className={classNames("title", className)} {...otherProps}>{children}</h1>

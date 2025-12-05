@@ -4,7 +4,7 @@ import Title from "@/src/components/Title";
 import Text from "@/src/components/Text";
 import Tag from "@/src/components/Tag";
 import Button from "@/src/components/Button";
-import "./index.css";
+import "./index.scss";
 
 const Home = () => (
   <PageWithHeader>

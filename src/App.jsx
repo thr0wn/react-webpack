@@ -2,6 +2,7 @@ import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Home from "@/src/pages/Home";
 import About from "@/src/pages/About";
+import PageWithModal from "@/src/pages/PageWithModal";
 
 const App = () => (
   <Switch>
@@ -10,6 +11,9 @@ const App = () => (
     </Route>
     <Route path="/about">
       <About />
+    </Route>
+    <Route path="/page-with-modal">
+      <PageWithModal />
     </Route>
     <Redirect from="/*" to="/home" exact />
   </Switch>

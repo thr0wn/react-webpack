@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./index.css";
+import "./index.scss";
 
 const Text = ({ className, children, ...otherProps }) => (
   <p className={classNames("text", className)} {...otherProps}>{children}</p>

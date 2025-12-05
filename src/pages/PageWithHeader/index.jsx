@@ -7,7 +7,7 @@ import Header from "@/src/components/Header";
 import Menu from "@/src/components/Menu";
 import Link from "@/src/components/Link";
 import Page from "@/src/pages/Page";
-import "./index.css";
+import "./index.scss";
 
 const PageWithHeader = ({ children, className, ...otherProps }) => (
   <Page className={classNames("page-with-header", className)}
